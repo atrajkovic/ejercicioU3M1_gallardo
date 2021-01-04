@@ -1,0 +1,321 @@
+/*
+#logo-container
+#logo-img
+nav
+#botonera
+.boton-nav
+#empresa-inicio
+.descripcion-empresa
+footer
+.social-media
+*/
+
+body{
+    min-width: 960px;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color:#b2edea;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+#logo-container{
+    width: 100%;
+    background-color: #ffffff;
+    height: 180px;
+    text-align: center;
+    margin-top: 10px;
+    border:  2px solid #000000;
+    box-sizing: border-box;
+}
+
+#logo-img{
+    height: 170px;
+}
+
+#botonera{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+
+.boton-nav, .btn-activo{
+    display: inline-block;
+    width: 25%;
+    margin: 0;
+    text-align: center;
+    height: 60px;
+    background-color: #aff0b8;
+    color: #000000;
+    box-sizing: border-box;
+    padding-top: 15px;
+    font-size: 1.3rem;
+}
+
+.btn-activo{
+    border-bottom: 3px solid #68b072;
+}
+
+.boton-nav:hover, .btn-activo:hover{
+    background-color: #68b072;
+    color: #ffffff;
+}
+
+#empresa-inicio    h1{
+    font-size: 3rem;
+    margin: 10px 0 5px 0;
+}
+
+#empresa-inicio h3{
+    font-size: 2rem;
+    margin: 0;
+}
+
+#reproductor{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#video{
+    max-width: 1920px;
+    width: 70%;
+    margin: 0 auto;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+#controladores{
+    
+    width: 70%;
+    margin: 0 auto;
+}
+
+#botones{
+    text-align: left;
+}
+
+#barra{
+    height: 12px;
+    width: 55%;
+    margin-left: 1.5%;
+    background-color: #68b072;
+    display: inline-block;
+    position: relative;
+    border-radius: 6px;
+}
+
+#progreso{
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background-color: #000000;
+    display: inline-block;
+    position: absolute;
+    margin-top: 3px;
+
+}
+
+.btn-control{
+    width: 10%;
+}
+
+.desc-formulario{
+    display: block;
+    margin: 15px 0 3px 0;
+    font-size: 1.1rem;
+    color: #0330ad;
+}
+
+.campo-form{
+    border: none;
+    border-bottom: 2px solid #0330ad;
+    background-color: transparent;
+    width: 20%;
+    font-size: 1.1rem;
+}
+
+.carousel{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slick-slide img{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#valores{
+    margin-top: 40px;
+    margin-bottom: 500px;
+    text-align: center;
+}
+
+#flex-container{
+    flex-direction: row;
+    flex-flow: row;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 75%;
+    margin: 20px auto 0;
+}
+
+.flex-item{
+    text-align: center;
+    flex: 1 2 26%;
+    margin: 0 15px;
+    max-width: 400px;
+    background-color: #ffffff;
+    border: 2px solid #0330ad;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.flex-item:hover{
+    transform:scale(1.08);
+    border: 4px solid #075400;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+
+.valor-img{
+    width: 60%;
+    margin-top: 25px;
+}
+
+.valor-txt{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#valores-h2{
+    margin: 0 auto;
+    font-size: 3rem;
+    color: #0330ad;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+
+/* transition-property y transition-duration están repetidas para animar tanto cuando se coloca el mouse como cuando se quita de encima*/
+
+#valores-h2:hover{
+    color: #075400;
+    transform: scale(1.2);
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+
+
+
+/*Tablet*/
+@media all and (min-width:600px) and (max-width: 1023px){
+
+    body{
+        margin: 0 auto;
+        min-width: 200px;
+        max-width: 90%;
+    }
+
+    .slick-slide img{
+        max-height: 430px;
+    }
+
+    #video, #controladores{
+        width: 100%;
+    }
+
+    .btn-control{
+        width: 24%;
+    }
+
+    #barra{
+        width: 95%; 
+    }
+
+    #botones{
+        text-align: center;
+    }
+
+    .valor-txt{
+        font-size: 1.5rem;
+    }
+    
+    #flex-container{
+        flex-basis: 50%;
+        flex-flow: row wrap;
+        flex-direction: row-reverse;
+    }
+
+    .flex-item{
+        margin: 0 5px;
+        min-width: 200px;
+        max-width: 300px;
+        flex: 1 1 35%;
+    }
+
+}
+/*Celular*/
+@media all and (max-width: 599px) {
+    body{
+        min-width: 200px;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    #logo-img{
+        height: 120px;
+    }
+
+    #logo-container{
+        height: 125px;
+    }
+
+    .boton-nav, .btn-activo{
+        width: 100%;
+        border-bottom: 3px solid #075400;
+        border-left: 3px solid #075400;
+        border-right: 3px solid #075400;
+    }
+    #botonera{
+        border-top: 3px solid #075400;
+    }
+
+    #empresa-inicio    h1{
+        font-size: 2.5rem;
+    }
+    
+    #empresa-inicio h3{
+        font-size: 1.5rem;
+    }
+
+    #video, #controladores{
+        width: 100%;
+    }
+    
+    .btn-control{
+        width: 24%;
+    }
+    
+    #barra{
+        width: 95%; 
+    }
+    
+    #botones{
+        text-align: center;
+    }
+
+    .slick-slide img{
+        max-height: 280px;
+    }
+    
+    #flex-container{
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .flex-item{
+        margin-bottom: 5px;
+    }
+
+}
+
